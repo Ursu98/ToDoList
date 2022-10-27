@@ -1,18 +1,20 @@
 
-const textThrough = document.querySelector('.text-through');
+let textThrough = document.querySelectorAll('.text-through');
 const task_list = document.querySelector('.add-lists')
 const button_add_task = document.querySelector('.add-btn')
 
 
 let count = 0;
-const hz = textThrough.forEach(item =>{
+
+textThrough.forEach(item =>{
+
     item.addEventListener('click', () => {
         item.style.textDecoration = 'line-through';
         count++;
         if (count % 2 === 0) {
             item.style.textDecoration = 'none';
         }
-    })
+})
 });
 
 
@@ -30,7 +32,6 @@ button_add_task.addEventListener('click', ()=>{
 
     }
     document.querySelector('.text-list').value = '';
-
     })
 
 

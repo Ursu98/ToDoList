@@ -16,6 +16,11 @@ body {
     margin: 0 0 12px 0;
     color: #fff;
 }
+.header_title{
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-weight: 600;
+}
 .container{
     border-radius: 8px;
     width: 100%;
@@ -24,6 +29,37 @@ body {
     background-color: #10101d;
     padding: 24px;
     overflow: auto;
+}
+.text-list{
+    border-right: 1px solid #10101d ;
+    border-left:  1px solid #10101d;
+    border-top:  1px solid #10101d;
+    background-color: #10101d;
+    border-bottom:1px solid white;
+    width: 70%;
+    margin: 15px;
+}
+
+
+.add-btn{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #ED9AA6;
+}
+.add-btn::before{
+    content: "\2795";
+    width: 10px;
+    color: white;
+}
+li{
+    cursor: pointer;
+    width: 100%;
+}
+
+.remove{
+    width: 25px;
+    height: 25px;
 }
 
 
