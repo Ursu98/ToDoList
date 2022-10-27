@@ -1,47 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>$Title$</title>
-    <link rel="stylesheet" href="./style/style.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <div class="app-container" id="taskList">
-      <h1 class="app-header">TO DO LIST</h1>
-      <div class="app-task">
-       <div class="first_line">
-        <input
-          type="text"
-          autocomplete="off"
-          placeholder="Add New Task"
-          v-model="'tasks.name"
-          @keyup.enter="newItem"
-          class="task-input"
-        />
-
-        <input
-          type="submit"
-          value=""
-          class="submit-task"
-          @click="newItem"
-          title="Add task"
-        />
-       </div>
-      </div>
-      <ul class="task-list">
-        <li class="task-list-item">
-          <label class="task-list-item">
-            <input type="checkbox" />
-            <span>{{task.name}}</span>
-          </label>
-          <span @click="delItem(task)" class="delete-btn" title="Delete Task">
-            {{task.del}}
-          </span>
-        </li>
-      </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+   <div id="myDIV" class="header">
+  <h2 style="margin:5px">My To Do List</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
     </div>
-    $END$
-    <script src="./script/script.js"></script>
-  </body>
+
+    <div>
+  <ul id="myUL">
+  <li class="list">Lorem ipsum dolor.</li>
+  <button class="remove"></button>
+  <li class="list">Lorem ipsum dolor.</li>
+  <button class="remove"></button>
+  <li class="list">Lorem ipsum dolor.</li>
+  <button class="remove"></button>
+  <li class="list">Lorem ipsum dolor.</li>
+  <button class="remove"></button>
+</ul>
+     </div>
+   </div>
+</body>
 </html>
