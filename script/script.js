@@ -5,12 +5,14 @@ const button_add_task = document.querySelector('.add-btn')
 
 
 let count = 0;
-textThrough.addEventListener('click', () => {
-    textThrough.style.textDecoration = 'line-through';
-    count++;
-    if (count % 2 === 0) {
-        textThrough.style.textDecoration = 'none';
-    }
+const hz = textThrough.forEach(item =>{
+    item.addEventListener('click', () => {
+        item.style.textDecoration = 'line-through';
+        count++;
+        if (count % 2 === 0) {
+            item.style.textDecoration = 'none';
+        }
+    })
 });
 
 
