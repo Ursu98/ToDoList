@@ -6,11 +6,27 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
+<div class="container">
+    <div id="myDIV" class="header">
+        <h2 style="margin:5px">My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
 
-
-<script src="script/script.js"></script>
+    <div>
+        <ul id="myUL">
+            <li class="list">Lorem ipsum dolor.</li>
+            <button class="remove"></button>
+            <li class="list">Lorem ipsum dolor.</li>
+            <button class="remove"></button>
+            <li class="list">Lorem ipsum dolor.</li>
+            <button class="remove"></button>
+            <li class="list">Lorem ipsum dolor.</li>
+            <button class="remove"></button>
+        </ul>
+    </div>
+</div>
 </body>
 </html>
