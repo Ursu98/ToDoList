@@ -1,5 +1,18 @@
+
+const textThrough = document.querySelector('.text-through');
 const task_list = document.querySelector('.add-lists')
 const button_add_task = document.querySelector('.add-btn')
+
+
+let count = 0;
+textThrough.addEventListener('click', () => {
+    textThrough.style.textDecoration = 'line-through';
+    count++;
+    if (count % 2 === 0) {
+        textThrough.style.textDecoration = 'none';
+    }
+});
+
 
 
 //Event to add tasks
