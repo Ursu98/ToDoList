@@ -10,6 +10,7 @@
     <div class="app-container" id="taskList">
       <h1 class="app-header">TO DO LIST</h1>
       <div class="app-task">
+       <div class="first_line">
         <input
           type="text"
           autocomplete="off"
@@ -18,6 +19,7 @@
           @keyup.enter="newItem"
           class="task-input"
         />
+
         <input
           type="submit"
           value=""
@@ -25,6 +27,7 @@
           @click="newItem"
           title="Add task"
         />
+       </div>
       </div>
       <ul class="task-list">
         <li class="task-list-item">
