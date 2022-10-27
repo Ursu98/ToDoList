@@ -55,11 +55,19 @@ body {
 li{
     cursor: pointer;
     width: 100%;
+    color: white;
+    margin-bottom: 20px;
+    background-color: #191933;
+    padding: 10px 5px;
 }
 
 .remove{
     width: 25px;
     height: 25px;
+}
+i{
+    color: #55091D;
+    font-size: 50px;
 }
 
 
