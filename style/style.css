@@ -19,6 +19,9 @@ body{
     border-bottom: 2px solid white;
 background-color: #10101C;
     width: 90%;
+    border-left: 2px solid#10101C;
+    border-right: 2px solid #10101C;
+    border-top: 2px solid #10101C;
 
 }
 
