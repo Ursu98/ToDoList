@@ -22,12 +22,15 @@ textThrough.forEach(item =>{
 //Event to add tasks
 button_add_task.addEventListener('click', ()=>{
     let text = document.querySelector('.text-list').value;
+    const logo = document.createElement('i')
+    logo.classList.add('fa','fa-trash','fa-2x')
     if(text === ''){
         alert("Write some text!")
     }else{
         const li = document.createElement("li");
         li.classList.add('text-through')
         li.append(text)
+        li.append(logo)
         task_list.appendChild(li);
 
     }
