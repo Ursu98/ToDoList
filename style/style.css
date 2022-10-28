@@ -6,22 +6,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(45deg,plum,mediumpurple);
-
-}
-
-.header {
+    background-image: linear-gradient(45deg, plum, mediumpurple);
+  }
+  
+  .header {
     font-size: 20px;
     line-height: 32px;
     margin: 0 0 12px 0;
     color: #fff;
-}
-.header_title{
+  }
+  .header_title {
     text-transform: uppercase;
     margin-left: 20px;
     font-weight: 600;
-}
-.container{
+  }
+  .container {
     border-radius: 8px;
     width: 100%;
     max-width: 480px;
@@ -29,47 +28,53 @@ body {
     background-color: #10101d;
     padding: 24px;
     overflow: auto;
-}
-.text-list{
-    border-right: 1px solid #10101d ;
-    border-left:  1px solid #10101d;
-    border-top:  1px solid #10101d;
+  }
+  .text-list {
+    border-right: 1px solid #10101d;
+    border-left: 1px solid #10101d;
+    border-top: 1px solid #10101d;
     background-color: #10101d;
-    border-bottom:1px solid white;
+    border-bottom: 1px solid white;
     width: 70%;
     margin: 15px;
-}
-
-
-.add-btn{
+    outline: none;
+  }
+  
+  .add-btn {
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    background-color: #ED9AA6;
-}
-.add-btn::before{
+    background-color: #ed9aa6;
+  }
+  .add-btn::before {
     content: "\2795";
     width: 10px;
     color: white;
-}
-li{
+  }
+  li {
     cursor: pointer;
     width: 100%;
-    color: white;
-    margin-bottom: 20px;
-    background-color: #191933;
-    padding: 10px 5px;
-}
-
-.remove{
+  }
+  
+  .remove {
     width: 25px;
     height: 25px;
-}
-i{
-    color: #55091D;
-    font-size: 50px;
-}
-
-
-
-
+  }
+  
+  /*  */
+  .add-lists {
+    list-style: none;
+    padding-inline-start: 15px;
+    padding-inline-end: 58px;
+  }
+  .task-container {
+    display: flex;
+    align-items: center;
+  }
+  input[type="checkbox"] {
+    width: 50px;
+    margin: 0;
+  }
+  .text-through {
+    text-decoration: line-through;
+  }

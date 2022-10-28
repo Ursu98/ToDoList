@@ -1,38 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-<div class="container">
-   <div class="header">
-  <h2 class="header_title">My To Do List</h2>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2 class="header_title">My To Do List</h2>
 
-  <input class="text-list" type="text" id="myInput" placeholder="Task">
-  <button class="add-btn"></button>
+        <input class="text-list" type="text" id="myInput" placeholder="Task" />
+        <button class="add-btn"></button>
+      </div>
+      <div>
+        <ul class="add-lists">
+          <div class="task-container">
+            <input type="checkbox" class="input-box" />
+            <li>Lorem ipsum dolor.</li>
+            <button class="remove"><i class="fa fa-trash"></i></button>
+          </div>
+          <div class="task-container">
+            <input type="checkbox" />
+            <li>Lorem ipsum dolor.</li>
+            <button class="remove"><i class="fa fa-trash"></i></button>
+          </div>
+          <div class="task-container">
+            <input type="checkbox" />
+            <li>Lorem ipsum dolor.</li>
+            <button class="remove"><i class="fa fa-trash"></i></button>
+          </div>
+          <div class="task-container">
+            <input type="checkbox" />
+            <li>Lorem ipsum dolor.</li>
+            <button class="remove"><i class="fa fa-trash"></i></button>
+          </div>
+        </ul>
+      </div>
     </div>
-    <div>
-  <ul class="add-lists">
-  <li class="text-through">Lorem ipsum dolor. <i class="fa fa-trash fa-2x close" ></i></li>
-  <li class="text-through">Lorem ipsum dolor.<i class="fa fa-trash  fa-2x close"></i></li>
-  <li class="text-through">Lorem ipsum dolor.<i class="fa fa-trash fa-2x close"></i></li>
-
-  <li class="text-through">Lorem ipsum dolor. <i class="fa fa-trash fa-2x close"></i></li>
-
-</ul>
-     </div>
-   </div>
-  <script src="script/script.js"></script>
-</body>
+    <script src="./script/script.js"></script>
+  </body>
 </html>
-
-
